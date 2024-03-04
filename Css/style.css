@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* styling for the main element  */
+main{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.084);
+    display: flex;
+    flex-direction: column;
+}
+
+/* styling the switch  */
+.switch{
+    border: 2px solid rgb(157, 149, 149);
+    height: 60px;
+    width: 150px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: box-shadow 0.5s ease transform 1s ease-in-out;
+    margin: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.switch2{
+    border: 2px solid rgb(157, 149, 149);
+    height: 60px;
+    width: 150px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: box-shadow 0.5s ease transform 1s ease-in-out;
+    margin: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* hover effect for both element  */
+.switch:hover, .switch2:hover{
+    box-shadow: 5px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+/* knob styling  */
+.switch > .knob-switch, .switch2 > .knob-switch2{
+    display: inline-block;
+    background-color: rgb(242, 232, 232);
+    box-shadow: inset 5px 5px 10px 5px rgba(0,0,0,0.3);
+    width: 75px;
+    height: 57px;
+    border:2px solid rgb(157, 149, 149);
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+/* off button  */
+.switch.active{
+    background-color: #9c0000;
+    box-shadow: inset 7px 7px 10px 7px #4a0000;
+    border: 1px solid transparent;
+}
+
+.switch.active .knob-switch{
+    margin-left: 74px;
+    transition:0.5s ease-in-out;
+}
+
+/* on button  */
+.switch2.active2{
+    background-color: rgb(1, 90, 1);
+    box-shadow: inset 7px 7px 10px 7px rgb(1, 90, 1);
+    border: 1px solid;
+}
+
+.switch2.active2 .knob-switch2{
+    margin-left: 74px;
+    transition: 0.5s ease-in-out;
+}
+
+/* buton text inside the switch*/
+.switch > h2{
+    position: absolute;
+    top: 17px;
+    left: 12px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.switch2 > h2{
+    position: absolute;
+    top: 17px;
+    left: 12px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
